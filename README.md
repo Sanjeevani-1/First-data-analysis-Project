@@ -93,6 +93,7 @@ Watershed wants to obtain following things and the business recommendation if th
 ## 2.	Data Extraction and Visualization:
                                                          Know your Data!!
                                                          
-The capstone database is extracted using SQL queries using Jupyter notebook. The contains in the database such as fields in each table are determined by writing the queries and ERD as well as Relational schema is prepared with the help of ERDplus for knowing how the data is organized and get easy access to joining the tables. After that the queries are written for joining the tables and get whole data in csv format, which contains 244 rows.
+The capstone database is extracted using SQL queries using Jupyter notebook. The contains in the database such as fields in each table are determined by writing the queries and ERD as well as Relational schema is prepared with the help of ERDplus for knowing how the data is organized and get easy access for joining the tables. After that the queries are written for joining the tables and get whole data in csv format, which contains 244 rows. The ERD and Relational schema are given below:
 
+![erd](https://user-images.githubusercontent.com/64282818/96377327-c0aefe00-11a2-11eb-864a-c7d23505d0ab.png)
 
