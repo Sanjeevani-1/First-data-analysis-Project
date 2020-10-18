@@ -97,3 +97,7 @@ The capstone database is extracted using SQL queries using Jupyter notebook. The
 
 ![erd](https://user-images.githubusercontent.com/64282818/96377327-c0aefe00-11a2-11eb-864a-c7d23505d0ab.png)
 
+![relational](https://user-images.githubusercontent.com/64282818/96377412-3dda7300-11a3-11eb-9cbc-9c8d85df24d5.png)
+
+
+Before any analysis or statistical modelling its important to look at the data understanding what they represent, to look for outliers, and to examine whether they contain any obvious effects or relationships. It is required for designing the model. This is done by visualizing the data in Tableau.
