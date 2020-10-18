@@ -143,7 +143,7 @@ These are calculated by using the formulaes provided in Guided Spreadsheets of t
 
 ![Screenshot (144)](https://user-images.githubusercontent.com/64282818/96378248-471a0e80-11a8-11eb-8127-e1f962792ea7.png)
 
-From observing the values got from calculated fields, by assuming the provided values of parameters, the 41 properties are profitable out of 244. For this business model the combination of short and long term rentals can be applied i.e. changing profitable properties to short term rentals and non-profitable should not conver to short terms. Implimenting this the profit can be maximized.
+From observing the values got from calculated fields, by assuming the provided values of parameters, the 41 properties are profitable out of 244. For this business model the combination of short and long term rentals can be applied i.e. changing profitable properties to short term rentals and non-profitable should not convert to short terms. Implimenting this the profit can be maximized.
 
 
 [http://www.modernanalyst.com/Resources/Articles/tabid/115/ID/1427/An-Overview-of-Requirements-Elicitation.aspx](url)
