@@ -101,3 +101,54 @@ The capstone database is extracted using SQL queries using Jupyter notebook. The
 
 
 Before any analysis or statistical modelling its important to look at the data understanding what they represent, to look for outliers, and to examine whether they contain any obvious effects or relationships. It is required for designing the model. This is done by visualizing the data in Tableau.
+
+![4](https://user-images.githubusercontent.com/64282818/96377549-f6a0b200-11a3-11eb-83b6-890d8b4a2695.png)
+
+![5](https://user-images.githubusercontent.com/64282818/96377547-f56f8500-11a3-11eb-807a-218978137008.png)
+
+![6](https://user-images.githubusercontent.com/64282818/96377546-f30d2b00-11a3-11eb-8707-01010f22fbd1.png)
+
+
+## 3.	Implementation of data analysis in Excel:
+In order to determine the best rent level for each property, we need to be able to forecast how the occupancy rate for that particular property varies as we change the rent. For that the data should be plotted and finding the parameters such as R-squared, slope etc.   
+
+
+![4](https://user-images.githubusercontent.com/64282818/96377633-762e8100-11a4-11eb-9869-1d1e8986ca6e.JPG)
+
+
+The above best fit line doesn’t give any relationship between occupancy rate and the rent because simply using these raw values cannot predict the relationship due to effect of other factors such as location. The standard deviation of the occupancy rates in the data is 16.3%, and the standard error of forecasts using our linear regression is 16.1% which is very high. So, for increasing the accuracy of the model ‘Normalization’ of the data is required. In this case, each comparable property is considered nightly rent in terms of how it compares to the rents of other properties of the same type in the same location. The data is used are the 10th percentile (low) and 90th percentile (high) rents for each of the 244 combinations of comparable property type and location. Following relationship (best-fit line) is obtained.
+
+![5](https://user-images.githubusercontent.com/64282818/96377652-9bbb8a80-11a4-11eb-8764-4bd62b1e36ac.JPG)
+
+
+Now using model's parameters (the line's slope and y-intercept), along with given constraints, the optimal nightly rent (in dollars) that should be charged for the Watershed client's properties are predicted. The optimal rent is of course the rent level that would maximize total annual revenues, (the product of rent and occupancy rate multiplied by 365).
+
+### Optimization of Forecast ST Annual Revenues Before Transaction Costs:
+
+The optimization of forecast short-term annual revenues done by using the Microsoft solver in the excel in such a way that the optimized value of ST annual revenue is obtained. This is done by using no occupancy data with rents of less than 10th percentile or greater than 90th percentile to build the model, the constrains are used to limit the answers to rent values between the 10th and 90th percentile. But for doing this, the same thing is repeated for 244 times for each row. So, the alternate method is used for calculating the optimized forecast ST annual revenues. 
+
+## Final Calculations And Visualization:
+
+The calculation of following measures are carried out using excel spreadsheet and also by using Tableau calculated fields. 
+
+Yearly'Cash'Flow'(Conversion'Year)
+
+Yearly'Cash'Flow'(After'Conversion'Year)
+
+Yearly'Profits"(Conversion"Year)
+
+Yearly'Profits'(After'Conversion'Year)
+
+These are calculated by using the formulaes provided in Guided Spreadsheets of the course. The parameters are created in Tableau for fixed and dynamic variables which are assumed as instucted by the Watershed people. Also, the calculated fields ae created for obtaining the above measures. The interactive dashboard is created by which we can determine the behaviour of model by changing the dynamic parameters. The "Jittered" map is created for getting clear insight. Also, the total amount required for conversion of property from long term rental to short term is calculated. Sensitivity analysis is performed by chnaging the dynamic parameters.
+
+![Screenshot (144)](https://user-images.githubusercontent.com/64282818/96378248-471a0e80-11a8-11eb-8127-e1f962792ea7.png)
+
+From observing the values got from calculated fields, by assuming the provided values of parameters, the 41 properties are profitable out of 244. For this business model the combination of short and long term rentals can be applied i.e. changing profitable properties to short term rentals and non-profitable should not conver to short terms. Implimenting this the profit can be maximized.
+
+
+[http://www.modernanalyst.com/Resources/Articles/tabid/115/ID/1427/An-Overview-of-Requirements-Elicitation.aspx](url)
+[https://public.tableau.com/profile/sanjeevani1970#!/vizhome/project1_16015867104710/Dashboard12](url)
+
+# Excel to MySQL: Analytic Techniques for Business
+Offered by
+Duke University
